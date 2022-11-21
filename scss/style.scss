@@ -1,0 +1,134 @@
+@import '_obliquely';
+
+body{
+   font-family: 'Arial', sans-serif;
+}
+
+.wrapper{
+   min-width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+
+   display: flex;
+   flex-direction: column;
+
+}
+
+.header{
+   flex: 0 0 auto;
+}
+.main{
+   flex: 1 0 100%;
+}
+.footer{
+   flex: 0 0 auto;
+}
+
+[class*='__container']{
+   max-width: 1050px;
+   padding: 0 30px;
+   margin: 0 auto;
+}
+
+/*-------------------*/
+
+.header {
+
+   &__menu {
+      background-color: rgb(225, 240, 92);
+      padding: 20px 10px;
+   }
+
+   @media (max-width: 506px) {
+   
+   }
+}
+.menu {
+
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   @media (max-width: 506px) {
+      &__logo{
+         display: none;
+      }
+      &__body{
+         text-align: center;
+      }
+      &__list{
+         width: 100%;
+         text-align: center;
+         justify-content: center;
+      }
+   }
+   &__list {
+      display: flex;
+      gap: 20px;
+   }
+
+   &__item {
+   }
+
+   &__link {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+   }
+
+   &__burger {
+   }
+}
+
+
+.shuffle {  
+   padding: 100px 0px;
+   &__container {
+   }
+
+   &__title {
+         font-size: 23px;
+         font-weight: bold;
+         text-align: center;
+         &:not(:last-child){
+            margin-bottom: 20px;
+         }
+   }
+
+   &__desc {
+      text-align: center;
+      line-height: 1.2;
+      font-size: 18px;
+      &:not(:last-child){
+         margin-bottom: 40px;
+      }
+   }
+
+   &__shuffle-box {
+      text-align: center;
+   }
+
+   &__area {
+      resize: none;
+      border:  2px solid black;
+      display: block;
+      width: 100%;
+      height: 350px;
+      padding: 15px 10px;
+      line-height: 1.5;
+      &:not(:last-child){
+         margin-bottom: 20px;
+      }
+   }
+
+   &__button {
+      text-align: center;
+      padding: 10px 30px;
+      background-color: rgb(199, 226, 46);
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+   }
+}
